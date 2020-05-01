@@ -1,0 +1,5 @@
+FROM debian: 9.5-slim
+
+ADD etrypoint.sh/entrypoint.sh
+RUN chomd +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
